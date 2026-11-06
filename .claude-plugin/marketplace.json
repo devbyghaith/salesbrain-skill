@@ -1,0 +1,34 @@
+{
+  "name": "salesbrain",
+  "owner": {
+    "name": "Ghaith",
+    "url": "https://github.com/devbyghaith"
+  },
+  "metadata": {
+    "description": "Marketplace for the salesbrain-skill plugin",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "salesbrain-skill",
+      "source": "./",
+      "description": "Evidence-graded sales judgment: discovery, objections, closing, outreach, pricing, pitching.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Ghaith",
+        "url": "https://github.com/devbyghaith"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "sales",
+        "objections",
+        "discovery",
+        "cold-email",
+        "pricing",
+        "negotiation",
+        "evidence-based"
+      ]
+    }
+  ]
+}

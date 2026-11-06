@@ -17,6 +17,18 @@ One command, for Claude Code:
 git clone https://github.com/devbyghaith/salesbrain-skill ~/.claude/skills/salesbrain-skill
 ```
 
+Or as a plugin, from inside Claude Code 2.1.275 or later:
+
+```
+/plugin install salesbrain-skill --marketplace devbyghaith/salesbrain-skill
+```
+
+Or with the skills CLI, which works for Claude Code, Codex, Cursor and others:
+
+```bash
+npx skills add devbyghaith/salesbrain-skill
+```
+
 Then ask anything about a deal: *"The COO just replied that $48k is way more than they expected. Draft my
 reply."* The skill fires on its own when the task is about winning, pricing or advancing a deal, and stays
 silent on support replies, internal emails and landing-page copy.

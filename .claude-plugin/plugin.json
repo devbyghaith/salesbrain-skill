@@ -2,5 +2,23 @@
   "name": "salesbrain-skill",
   "version": "0.1.0",
   "description": "Evidence-graded sales judgment: discovery, objections, closing, outreach, pricing, pitching.",
-  "skills": ["./"]
+  "skills": [
+    "./"
+  ],
+  "author": {
+    "name": "Ghaith",
+    "url": "https://github.com/devbyghaith"
+  },
+  "homepage": "https://github.com/devbyghaith/salesbrain-skill",
+  "repository": "https://github.com/devbyghaith/salesbrain-skill",
+  "license": "MIT",
+  "keywords": [
+    "sales",
+    "objections",
+    "discovery",
+    "cold-email",
+    "pricing",
+    "negotiation",
+    "evidence-based"
+  ]
 }
