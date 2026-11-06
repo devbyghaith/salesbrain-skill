@@ -13,7 +13,7 @@ First release.
   4 misattributed, 2 failed replication, 9 unverifiable.
 - `references/sources.md`: register of 55 talks and 26 studies with evidence grades.
 - Four output templates in `assets/`.
-- Eval suite of eight `claude plugin eval` cases (five positive, three near-miss negatives). On the
+- Evaluation suite of eight Claude Code plugin-evaluation cases (five positive, three near-miss negatives). On the
   2026-11-06 run the skill fired in 15 of 15 positive runs and 0 of 18 negative runs; mean pass-rate delta
   over the positive cases about +0.73 against the no-skill baseline.
 - `scripts/lint.py` enforcing `AUTHORING.md`; `scripts/build_sources.py` regenerating the source register.

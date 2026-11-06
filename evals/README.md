@@ -1,6 +1,6 @@
 # Eval suite
 
-Eight cases in `claude plugin eval` format: five positive (the skill should fire and the output should meet
+Eight cases in the Claude Code plugin-evaluation format: five positive (the skill should fire and the output should meet
 the graders) and three near-miss negatives (the skill should stay silent and the task should still get done).
 Each positive case has a `skill-fired` grader (unscored under ablation) plus one or two `llm` graders anchored
 to a rule in `references/`. Each negative case has a `skill-not-fired` grader (`min: 0, max: 0, arm: both`)
