@@ -110,3 +110,5 @@ claude plugin eval . --case objection-too-expensive --runs 1 --ablation none --o
 ## License
 
 MIT. See [LICENSE](LICENSE). Contributions welcome: see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Privacy: the skill reads what you type, stores nothing and sends nothing anywhere. See [PRIVACY.md](PRIVACY.md).
