@@ -1,0 +1,24 @@
+name: New eval case
+description: A selling situation the skill should be tested on
+labels: [evals]
+body:
+  - type: textarea
+    id: prompt
+    attributes:
+      label: The user's prompt
+      description: Realistic, specific, no private data. This becomes evals/<case>/prompt.md.
+    validations:
+      required: true
+  - type: textarea
+    id: pass
+    attributes:
+      label: What a passing answer does
+      description: One or two checks, each anchored to a rule in references/.
+    validations:
+      required: true
+  - type: textarea
+    id: fail
+    attributes:
+      label: What a failing answer does
+    validations:
+      required: true

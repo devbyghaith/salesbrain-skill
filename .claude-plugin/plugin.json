@@ -1,0 +1,6 @@
+{
+  "name": "salesbrain-skill",
+  "version": "0.1.0",
+  "description": "Evidence-graded sales judgment: discovery, objections, closing, outreach, pricing, pitching.",
+  "skills": ["./"]
+}

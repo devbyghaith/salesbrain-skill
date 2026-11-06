@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Question or idea
+    url: https://github.com/devbyghaith/salesbrain-skill/discussions
+    about: Ask how to use the skill or propose a direction before opening an issue

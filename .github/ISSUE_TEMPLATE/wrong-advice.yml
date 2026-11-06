@@ -1,0 +1,30 @@
+name: Wrong or unsupported advice
+description: A rule in the skill is wrong, overstated, or missing its evidence
+labels: [evidence]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Where
+      description: File and the bullet or section header
+      placeholder: references/objections.md, "Too expensive"
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: The claim as written
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What contradicts or corrects it
+      description: DOI, dataset, replication, or a reasoned argument. Say how strong it is.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed wording
+      description: Optional. Keep it under 35 words with an evidence tag.

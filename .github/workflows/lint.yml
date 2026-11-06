@@ -1,0 +1,26 @@
+name: lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Lint skill against AUTHORING.md
+        run: python3 -I scripts/lint.py .
+      - name: Check eval cases have a prompt and at least one grader
+        run: |
+          set -e
+          for d in evals/*/; do
+            case "$d" in evals/results/) continue;; esac
+            test -f "$d/prompt.md" || { echo "missing $d/prompt.md"; exit 1; }
+            ls "$d"/graders/*.md >/dev/null 2>&1 || { echo "no graders in $d"; exit 1; }
+          done
+          echo "eval cases OK"

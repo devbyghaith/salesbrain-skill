@@ -1,0 +1,25 @@
+name: Triggering problem
+description: The skill fired when it should not have, or stayed silent when it should have fired
+labels: [triggering]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Which way
+      options:
+        - Should have fired but did not
+        - Fired but should not have
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: The exact prompt
+      description: Paste the user message. Remove anything private.
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and version
+      placeholder: Claude Code 2.1.305
